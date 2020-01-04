@@ -1,0 +1,8 @@
+  
+.vs/
+/**/bin
+/**/obj
+
+/**/*.csproj.user
+
+/s3-bucket/.serverless

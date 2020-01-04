@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "file-uploader@5.16.2",
+      "destination": "wwwroot/lib/file-uploader/",
+      "files": [
+        "continue.gif",
+        "edit.gif",
+        "loading.gif",
+        "pause.gif",
+        "processing.gif",
+        "retry.gif",
+        "trash.gif",
+        "placeholders/not_available-generic.png",
+        "placeholders/waiting-generic.png",
+        "s3.jquery.fine-uploader/continue.gif",
+        "s3.jquery.fine-uploader/edit.gif",
+        "s3.jquery.fine-uploader/loading.gif",
+        "s3.jquery.fine-uploader/pause.gif",
+        "s3.jquery.fine-uploader/processing.gif",
+        "s3.jquery.fine-uploader/retry.gif",
+        "s3.jquery.fine-uploader/s3.jquery.fine-uploader.min.js",
+        "s3.jquery.fine-uploader/s3.jquery.fine-uploader.min.js.map",
+        "s3.jquery.fine-uploader/fine-uploader-gallery.min.css",
+        "s3.jquery.fine-uploader/trash.gif",
+        "s3.jquery.fine-uploader/placeholders/not_available-generic.png",
+        "s3.jquery.fine-uploader/placeholders/waiting-generic.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+service: gevenim-eyup-demo-service
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: ${env:STAGE, 'dev'}
+  profile: serverless-admin
+  region: us-east-2 #you can change region
+
+resources:
+  Resources:
+    ImageDemoOnTheFly:
+      Type: AWS::S3::Bucket
+      Properties:
+        AccessControl: PublicReadWrite
+        BucketName: gevenim-eyup-demo-s3 #set your unique bucket name
+        CorsConfiguration: 
+          CorsRules:
+            -
+              AllowedOrigins:
+                - "*"
+              AllowedHeaders:
+                - "*"
+              ExposedHeaders:
+                - ETag
+              AllowedMethods:
+                - POST
+                - PUT
+                - DELETE
+              MaxAge: 3000
+    ImageDemoOnTheFlyPolicy:
+      Type: AWS::S3::BucketPolicy
+      Properties: 
+        Bucket: 
+          Ref: ImageDemoOnTheFly
+        PolicyDocument: 
+          Statement: 
+            - 
+              Action: 
+                - "s3:*"
+              Effect: "Allow"
+              Resource:
+                Fn::Join: 
+                  - ""
+                  - 
+                    - "arn:aws:s3:::"
+                    - 
+                      Ref: ImageDemoOnTheFly
+                    - "/*"
+              Principal: "*"

@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{75B709B0-6030-4FD9-A194-AF110A236786}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "src\WebApp\WebApp.csproj", "{04C9F23C-6A19-4228-84B7-2B2DD3643F75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "s3-bucket", "s3-bucket", "{2551B9F1-DED3-4901-93B7-DD8FE6BBAFB5}"
+	ProjectSection(SolutionItems) = preProject
+		s3-bucket\README.md = s3-bucket\README.md
+		s3-bucket\serverless.yml = s3-bucket\serverless.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ADE6D51D-D64D-4263-B56E-382AD4149AF9}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04C9F23C-6A19-4228-84B7-2B2DD3643F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04C9F23C-6A19-4228-84B7-2B2DD3643F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04C9F23C-6A19-4228-84B7-2B2DD3643F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04C9F23C-6A19-4228-84B7-2B2DD3643F75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{04C9F23C-6A19-4228-84B7-2B2DD3643F75} = {75B709B0-6030-4FD9-A194-AF110A236786}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {159DA8DA-747D-4949-B95C-A094BAB35A2A}
+	EndGlobalSection
+EndGlobal
